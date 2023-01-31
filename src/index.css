@@ -1,0 +1,62 @@
+.header{
+  background:radial-gradient(#0a99af,#057586); 
+  color: aliceblue;
+  font:"Amazon Ember",Arial,sans-serif;
+  text-align: center;
+  font-size: 32px;
+  line-height: 1.2em;
+  padding-top: 6px;
+}
+.bestsellers {
+  text-align: center;
+  color: white;
+  background-color: #00b8a9;
+  padding: 30px;
+}
+
+.bestsellers h2 {
+  margin-bottom: 10px;
+}
+.center-text {
+  display: flex;
+  align-items: center;
+}
+
+
+.book-list {
+  
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-gap: 10px;
+  margin-top: 30px;
+  padding-bottom: 50px; /* Add desired gap value */
+
+}
+
+.book-container {
+  position: relative;
+}
+
+.book img{
+  width:100%;
+  height:auto;
+
+}
+
+.book-info {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: white;
+  padding: 10px;
+  visibility: hidden;
+}
+
+.book-info.active {
+  visibility: visible;
+}
+.book {
+  margin-bottom: 30px; /* Add desired gap value */
+}
